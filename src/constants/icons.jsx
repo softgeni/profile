@@ -8,7 +8,7 @@ import {
 export const SOCIALINKS = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/smith-moreno",
+    href: "#",
     icon: <FaLinkedin />,
   },
   {
