@@ -3,11 +3,34 @@ import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-export const HERO_CONTENT = `I am a JavaScript developer focused on React Native, React, Next.js, and NestJS. I enjoy building modern applications, learning best practices, and improving my skills through hands-on projects. I am motivated to grow as a developer and contribute to real-world solutions with clean and maintainable code.`;
+// TIPOS
+type Experience = {
+  year: string;
+  role: string;
+  company: string;
+  description: string;
+  technologies: string[];
+};
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+type Project = {
+  title: string;
+  image: string; // como importamos .webp, es string
+  description: string;
+  technologies: string[];
+};
 
-export const EXPERIENCES = [
+type Contact = {
+  address: string;
+  phoneNo: string;
+  email: string;
+};
+
+// CONTENIDO
+export const HERO_CONTENT: string = `I am a JavaScript developer focused on React Native, React, Next.js, and NestJS. I enjoy building modern applications, learning best practices, and improving my skills through hands-on projects. I am motivated to grow as a developer and contribute to real-world solutions with clean and maintainable code.`;
+
+export const ABOUT_TEXT: string = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+
+export const EXPERIENCES: Experience[] = [
   {
     year: "2023 - Present",
     role: "Senior Full Stack Developer",
@@ -38,7 +61,7 @@ export const EXPERIENCES = [
   },
 ];
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     title: "E-Commerce Website",
     image: project1,
@@ -69,7 +92,7 @@ export const PROJECTS = [
   },
 ];
 
-export const CONTACT = {
+export const CONTACT: Contact = {
   address: "767 Fifth Avenue, New York, NY 10153",
   phoneNo: "+1(729)759709",
   email: "maickcupper@gmail.com",
