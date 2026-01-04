@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+//import project3 from "../assets/projects/project-3.webp";
+//import project4 from "../assets/projects/project-4.webp";
 
 // TIPOS
 type Experience = {
@@ -17,6 +17,10 @@ type Project = {
   image: string; // como importamos .webp, es string
   description: string;
   technologies: string[];
+  demoUrl:string
+  codeUrl: string
+
+
 };
 
 type Contact = {
@@ -37,6 +41,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Google Inc.",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+
   },
   {
     year: "2022 - 2023",
@@ -44,56 +49,34 @@ export const EXPERIENCES: Experience[] = [
     company: "Adobe",
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+
+  }
+
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: "E-Commerce Website",
+    title: "Renta-Cars",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["React", "Node.js", "MongoDB"],
+      "Renta-cars is a web application project for managing and renting cars. It's a modern solution built with Next.js and TypeScript that integrates user authentication, payment processing, database management, and file uploads.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS","Prisma","Axios"],
+    codeUrl: "https://github.com/smithmoreno12/renta-cars",
+    demoUrl: "https://renta-cars.vercel.app"
   },
   {
-    title: "Task Management App",
+    title: "Landing-Page-Bank",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "This is a landing page project for a bank, developed using modern frontend technologies. The project is built with Next.js as the main framework, uses Tailwind CSS for styling, Framer Motion for animations, and TypeScript for static typing.",
+    technologies: ["NextJS", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    codeUrl: "https://github.com/smithmoreno12/landing-page-bank",
+    demoUrl: "https://landing-page-bank-lilac.vercel.app"
   },
 ];
 
 export const CONTACT: Contact = {
-  address: "767 Fifth Avenue, New York, NY 10153",
+  address: "New York, NY 10153",
   phoneNo: "+1(729)759709",
   email: "maickcupper@gmail.com",
 };
